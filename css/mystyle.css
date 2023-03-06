@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+		body{ margin: 0; padding: 0; }
+		.wrapper{
+			width: 1200px;
+			margin: 20px auto;
+			padding: 0;
+		}
+		.navbarr{
+			display: flex;
+			justify-content: space-between;
+			height: 50px;
+			align-items: center;
+			width: 100%;
+		}
+		.navbarr>span{
+			width: 15%;
+		}
+		.mylogo{ 
+			width: 100%; 
+		}
+		.navbarr>ul{
+			padding: 0;
+			margin: 0;
+		}
+		
+		.navbarr>ul>li{
+			display: inline;
+			text-align: center;
+			font-size: 20px;
+		}
+		.navbarr a{ 
+			padding: 10px; 
+			margin: 0;
+			text-decoration: none;
+			color: #0e0e0e;
+		}
+		.navbarr a:hover{ 
+			opacity: 0.7; 
+		}
+		.purposediv{ background: #fff; color: #000; padding: 50px 0; }
+		.purposediv>.wrapper{ display: flex; margin: 0 auto; justify-content: space-between; align-items: center; }
+		.purposetxt{ width: 65% }
+		.purposetxt>h2{ font-size: 40px; }
+		.purposetxt>p{ font-size: 18px; line-height: 1.5; }
+		.purposeimg{ width: 30%; }
+		.purposeimg>img{ width: 100%; }
+		
+		.havediv{ background: #000; color: #fff; padding: 50px 0; }
+		.havediv>.wrapper{ display: flex; margin: 0 auto; justify-content: space-between; align-items: center; }
+		.haveimg{ width: 30%; margin-top: 50px; }
+		.haveimg>img{ width: 100%; }
+		
+		.spmenudiv{ display: none; }
+		.spmenu{ display: none; }
+		
+		.footerr{ width: 100%; text-align: center; padding: 30px 0; position: relative; right: 0; bottom: 0; left: 0; }
+		.footerr.indx{ width: 100%; text-align: center; padding: 30px 0; position: relative; }
+		.ttle{ text-align: center; font-size: 40px; margin: 0 auto 10px;  }
+		.misdiv{ padding: 50px 0; }
+		.misdiv h2{ font-size: 40px; text-align: center; }
+		.misdiv p{ font-size: 18px; text-align: center; }
+		.visdiv{ padding: 50px 0; background: #000; color: #fff; }
+		.visdiv h2{ font-size: 40px; text-align: center; }
+		.visdiv p{ font-size: 18px; text-align: center; }
+		
+		.bnrdiv{ width: 100%; background: #000; }
+		.bnrdiv>img{ width: 1200px; margin: 0 auto; }
+		
+		.actv{ background: #000; color: #fff !important; }
+		
+		.ourpetsdiv{ width: 100%; }
+		
+		
+		.tablink {
+		  background-color: #555;
+		  color: white;
+		  float: left;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+		  padding: 14px 16px;
+		  font-size: 17px;
+		  width: 25%;
+		}
+
+		.tablink:hover {
+		  background-color: #777;
+		}
+
+		.tabcontent {
+		  color: white;
+		  display: none;
+		  padding: 100px 20px;
+		  height: 100%;
+		}
+		
+		.petbxdiv{ display: flex !important; flex-wrap: wrap; justify-content: space-between; }
+		.petbx{ display: flex; justify-content: flex-start; width: 31%; margin: 30px 0 0; align-items: center; }
+		.petbx h2{ margin-left: 20px; }
+		.btn{ border: 0; background: transparent; margin: 0; padding: 0; outline: none !important; box-shadow: none !important; }
+		.petbxinside{ display: flex; justify-content: center; width: 100%; margin: 20px 0; align-items: center; }
+		.petbxinside h4{ font-size: 25px; margin-left: 25px; line-height: 1.5; }
+		.tabtxt{ font-size: 25px; color: #000; }
+
+
+		.servicediv{ background: #fff; color: #000; padding: 50px 0; }
+		.servicediv>.wrapper{ display: flex; margin: 0 auto; justify-content: space-between; align-items: center; }
+		.srvcbx{ display: flex; flex-wrap: wrap; justify-content: space-around; }
+		.srvcbx>span{ width: 30%; margin-top: 40px; }
+		.srvcbx>span>img{ width: 80%; margin: 0 auto; display: block; }
+
+
+		.aboutusdiv{ background: #fff; color: #000; padding: 50px 0; }
+		.aboutusdiv>.wrapper{ margin: 0 auto; }
+		.aboutusdiv p{ font-size: 20px; line-height: 1.5; }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    opacity: 0.7;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+		
+		.pc{ display: block; }
+		.sp{ display: none; }
+		
+		@media screen and (max-width: 750px) {
+			.pc{ display: none; }
+			.sp{ display: block; }
+			.spmenudiv{ display: block; width: 95%; margin: 0 auto; }
+			.navbarr{ display: none; }
+			.container {
+			  display: inline-block;
+			  cursor: pointer;
+			}
+			.bar1, .bar2, .bar3 {
+			  width: 35px;
+			  height: 5px;
+			  background-color: #333;
+			  margin: 6px 0;
+			  transition: 0.4s;
+			}
+			.change .bar1 {
+			  transform: translate(0, 11px) rotate(-45deg);
+			}
+			.change .bar2 {opacity: 0;}
+			.change .bar3 {
+			  transform: translate(0, -11px) rotate(45deg);
+			}
+			.spmenu{ margin: 0; padding: 0; }
+			.spmenu li{ display: block; text-align: center; }
+			.spmenu li a{ color: #000; font-size: 18px; padding: 10px 0; display: block; }
+			.spmenudiv>div{ display: flex; justify-content: space-between; align-items: center; }
+			.spmenudiv>div>span{ width: 35%; }
+			.spmenudiv>div>span>img{ width: 100%; }
+			.wrapper{ width: 90%; }
+			.container{ margin: 0; }
+			.purposediv>.wrapper{ flex-direction: column; }
+			.purposetxt{ width: 90%; }
+			.purposeimg{ width: 90%; }
+			
+			.footerr{ position: relative; }
+			.bnrdiv img.sp{ width: 100%; }
+			
+			.petbxinside{ flex-direction: column; }
+			.petbxinside h4{ margin-left: 0; }
+			
+			.servicediv,.aboutusdiv{ padding: 0; }
+			.srvcbx>span>img{ width: 100%; }
+			
+			
+			.footerr.srvcs{ position: absolute; }
+		}

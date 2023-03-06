@@ -1,0 +1,12 @@
+Carousel Image Slider:
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_carousel&stacked=h
+
+Entrance animations
+https://michalsnik.github.io/aos/
+
+Tabs of ourpets.html
+https://bootsnipp.com/snippets/QbGq1
+
+Bootstrap Modal
+https://getbootstrap.com/docs/4.0/components/modal/
+

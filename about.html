@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="css/mystyle.css" rel="stylesheet">
+<title>Pet Shop Viewing</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="navbarr">
+			<span><img src="images/mylogo.png" class="mylogo" alt="" /></span>
+			<ul>
+				<li><a href="index.html" target="_top">Home</a></li>
+				<li><a href="ourpets.html" target="_top">Our Pets</a></li>
+				<li><a href="services.html" target="_top">Services</a></li>
+				<li><a href="about.html" target="_top" class="actv">About</a></li>
+				<li><a href="contact.html" target="_top">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div class="spmenudiv">
+			<div>
+				<span><img src="images/mylogo.png" class="mylogosp" alt="" /></span>
+				<div class="container spmenubtn" onclick="myFunction(this)">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</div>
+			</div>
+
+			<ul class="spmenu">
+				<li><a href="index.html" target="_top">Home</a></li>
+				<li><a href="ourpets.html" target="_top">Our Pets</a></li>
+				<li><a href="services.html" target="_top">Services</a></li>
+				<li><a href="about.html" target="_top">About</a></li>
+				<li><a href="contact.html" target="_top">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="bnrdiv" data-aos="fade-up">
+		<div class="wrapper">
+			<img src="images/aboutusbnr.jpg" class="pc" alt="" />
+			<img src="images/aboutusbnr-sp.jpg" class="sp" alt="" />
+		</div>
+	</div>
+	<div class="aboutusdiv">
+		<div class="wrapper">
+			<h2>Who are we?</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+			<h2>What do we do?</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+			<h2>Where can you find us?</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30872.224619455137!2d120.9576220347242!3d14.711004301642154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b3f2c352666b%3A0x9af8d2dfa797d58!2sLungsod%20ng%20Valenzuela%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1670245869191!5m2!1sfil!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	
+	
+	<div class="footerr">
+		© 2022 Animal Sanctuary. All Rights Reserved.
+	</div>
+	
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+	
+$(document).ready(function(){
+  $(".spmenubtn").click(function(){
+    $(".spmenu").slideToggle();
+  });
+});
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init({
+		easing: 'ease-in-out-sine'
+	});
+</script>
+</body>
+</html>
